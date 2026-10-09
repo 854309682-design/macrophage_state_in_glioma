@@ -1,0 +1,27 @@
+# large / regenerable analysis artefacts (never commit data)
+objects/
+results/
+logs/
+*.h5ad
+*.h5
+*.loom
+*.rds
+*.csv.gz
+*.tar
+
+# environment
+env/.venv/
+.venv/
+venv/
+
+# python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# R / editor / OS
+.Rhistory
+.RData
+.Rproj.user/
+.DS_Store
+Thumbs.db

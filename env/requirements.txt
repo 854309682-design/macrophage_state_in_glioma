@@ -1,0 +1,42 @@
+# ===== Python environment for the macrophage_state_in_glioma pipeline =====
+# Python 3.11 (developed with 3.11.15). With uv:
+#   uv venv env/.venv --python 3.11
+#   uv pip install --python env/.venv/bin/python -r env/requirements.txt
+# Notes:
+#   * The study protocol pinned scanpy 1.10.x; the resolver installed 1.11.5 (compatible minor bump).
+#   * torch is the CPU build - the pipeline requires no GPU (do not add a CUDA requirement).
+#   * Installed from pypi.org; some regional mirrors returned HTTP 403 for this package set.
+#
+# --- core data / numeric ---
+numpy==2.4.6
+pandas==2.3.3
+scipy==1.17.1
+h5py==3.16.0
+scikit-learn==1.9.0
+
+# --- single-cell: scanpy ecosystem ---
+anndata==0.12.19
+scanpy==1.11.5
+leidenalg==0.12.0
+python-igraph==1.0.0
+umap-learn==0.5.12
+harmonypy==2.0.0
+
+# --- plotting ---
+matplotlib==3.11.1
+seaborn==0.13.2
+
+# --- doublet detection / QC ---
+scrublet==0.2.3
+
+# --- integration / deep learning ---
+scvi-tools==1.4.2
+torch==2.14.0
+
+# --- regulatory network ---
+pySCENIC==0.12.1
+
+# --- spatial deconvolution ---
+cell2location==0.1.5
+infercnvpy
+gtfparse
