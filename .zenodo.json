@@ -1,0 +1,43 @@
+{
+  "title": "Analysis code for \"A reproducible, interpretable multi-omics integration framework for clinical decision-making in glioma: a hypoxic-niche macrophage state with context-dependent prognostic value\"",
+  "upload_type": "software",
+  "description": "<p>Analysis code accompanying the manuscript <em>\"A reproducible, interpretable multi-omics integration framework for clinical decision-making in glioma: a hypoxic-niche macrophage state with context-dependent prognostic value\"</em> (Frontiers in Big Data, Research Topic 78756).</p><p>The pipeline integrates public glioma single-cell, spatial and bulk transcriptomes to define <strong>TAM-IS</strong>, an immunosuppressive tumour-associated macrophage <em>state</em>, and to test three pre-registered hypotheses: (H1) cross-cohort reproducibility and transferability of the state, (H2) its coupling to the hypoxic/peri-necrotic niche, and (H3) its prognostic value in bulk cohorts. It covers 110,462 quality-controlled cells from three discovery scRNA-seq cohorts (GSE103224, GSE131928, GSE163120), independent single-cell validation cohorts (GSE89567, GSE70630), spatial validation (IvyGAP / GSE107559), and bulk survival, deconvolution and meta-analysis (TCGA-GBM/LGG via the cBioPortal study lgggbm_tcga_pub; CGGA mRNAseq_325 and mRNAseq_693), together with cell-cell communication (CellChat), ligand-target inference (NicheNet), regulon activity (pySCENIC/AUCell), druggability assessment and figure generation.</p><p>Contents: 46 scripts (39 Python, 4 R, 3 shell) organised by pipeline step under <code>scripts/</code>, with <code>README.md</code> (data sources, environment, run order, figure reproduction, caveats), <code>env/requirements.txt</code> (Python 3.11) and <code>DATA_MANIFEST.md</code> (input and reference-resource manifest). All paths are configurable through the <code>GLIOMA_PROJ</code> and <code>GLIOMA_DATA</code> environment variables, so a fresh clone runs without editing any source file. Raw data are not redistributed.</p><p>Funding: Guangxi Natural Science Foundation (2024GXNSFAA010035, 2024GXNSFAA010098) and the 2025 Guangxi Higher Education Undergraduate Teaching Reform Project, General Category B (2025JGB336).</p>",
+  "creators": [
+    {
+      "name": "Fu, Huangde",
+      "affiliation": "Department of Neurosurgery, The Fifth People's Hospital of Nanning, Nanning, China"
+    },
+    {
+      "name": "Xie, Yaoyi",
+      "affiliation": "Department of Neurology, The Third People's Hospital of Nanning, Nanning, China"
+    },
+    {
+      "name": "Wang, Gang",
+      "affiliation": "Department of Neurosurgery, The Third People's Hospital of Nanning, Nanning, China"
+    },
+    {
+      "name": "Luo, Chunying",
+      "affiliation": "Department of Science Research, The Fifth People's Hospital of Nanning, Nanning, China"
+    },
+    {
+      "name": "Li, Chuanyu",
+      "affiliation": "Key Laboratory of Medical Research Basic Guarantee for Immune-Related Diseases Research of Guangxi (Cultivation), Affiliated Hospital of Youjiang Medical University for Nationalities, Baise, China; Department of Neurosurgery, Affiliated Hospital of Youjiang Medical University for Nationalities, Baise, China"
+    }
+  ],
+  "license": "mit",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "glioma",
+    "tumour-associated macrophages",
+    "single-cell RNA sequencing",
+    "spatial transcriptomics",
+    "multi-omics integration",
+    "tumour hypoxia",
+    "tumour immune microenvironment",
+    "reproducibility",
+    "machine learning",
+    "cancer bioinformatics"
+  ],
+  "notes": "Analysis code only: raw data are not redistributed (accessions and download instructions are in README.md and DATA_MANIFEST.md). Derived result tables are available from the corresponding authors."
+}
