@@ -1,5 +1,7 @@
 # macrophage_state_in_glioma
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23261645.svg)](https://doi.org/10.5281/zenodo.23261645)
+
 Analysis code accompanying the manuscript
 
 > **A reproducible, interpretable multi-omics integration framework for clinical decision-making in glioma: a hypoxic-niche macrophage state with context-dependent prognostic value**
@@ -223,8 +225,19 @@ figure-legend sentence as vector text. Figures are written to `results/figures/`
 
 ## Citation
 
-If you use this code, please cite the manuscript above once published. Author and journal
-metadata will be added here upon acceptance.
+The archived release is citable:
+
+> Fu, H., Xie, Y., Wang, G., Luo, C., & Li, C. (2026). *Analysis code for "A reproducible,
+> interpretable multi-omics integration framework for clinical decision-making in glioma: a
+> hypoxic-niche macrophage state with context-dependent prognostic value"* [Computer software].
+> Zenodo. https://doi.org/10.5281/zenodo.23261645
+
+**Concept DOI** `10.5281/zenodo.23261645` — always resolves to the most recent archived version;
+use it in the manuscript's data-availability statement. Each GitHub release additionally mints a
+version-specific DOI (the first release is `10.5281/zenodo.23261646`) — cite that one when you
+need the exact snapshot a result was produced from.
+
+Please also cite the manuscript once it is published.
 
 ## License
 
